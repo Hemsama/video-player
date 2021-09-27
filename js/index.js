@@ -37,7 +37,7 @@ $video.addEventListener('timeupdate', handTimeUpdate)
 
 function handleLoaded(){
     $progress.max = $video.duration
-    console.log('ha cargado mi video', $video.duration)
+    //console.log('ha cargado mi video', $video.duration)
 }
 
 function handTimeUpdate(){
@@ -45,9 +45,9 @@ function handTimeUpdate(){
     //console.log('Tiempo actual', $video.currentTime)
 }
 
-$progress.addEventListener('inpur', handleInput)
+$progress.addEventListener('input', handleInput)
 
 function handleInput(){
     $video.currentTime = $progress.value
-    console.log($progress.value)
+    //console.log($progress.value)
 }
